@@ -4,7 +4,7 @@ import { Grid, Typography, Card, Link } from "@mui/material";
 import data from "./../../../Data/data";
 
 const MyContacts = () => {
-  const cardPadding = { pt: 3.5, pl: 2, pr: 3.5, pb: 3.5 };
+  const cardPadding = { pt: 3.75, pl: 2, pr: 3.5, pb: 3.75 };
 
   return (
     <Fragment>

@@ -7,11 +7,6 @@ import MapIcon from "@mui/icons-material/Map";
 import PublicIcon from "@mui/icons-material/Public";
 import { pink } from "@mui/material/colors";
 
-const imageUrl =
-  !process.env.NODE_ENV || process.env.NODE_ENV === "development"
-    ? "/images/me.jpg"
-    : "/mon-cv/images/me.jpg";
-
 const data = {
   firstname: "ANDRIAMIHARIMANANA",
   lastname: "Ando Lalaina",
@@ -24,7 +19,7 @@ const data = {
     date: "17 Octobre 1997",
     location: "Soavinandriana",
   },
-  imageUrl,
+  imageUrl: "/mon-cv/images/me.jpg",
   contacts: {
     phone: {
       data: "0342698906",
