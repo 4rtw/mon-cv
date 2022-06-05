@@ -25,7 +25,7 @@ const MySocialButtons = ({ setTheme, theme }) => {
               handleClick(element.link);
             }}
           >
-            {element.icon}
+            {element.icon()}
           </IconButton>
         );
       })}

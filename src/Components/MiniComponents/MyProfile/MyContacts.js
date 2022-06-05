@@ -4,7 +4,7 @@ import { Grid, Typography, Card, Link } from "@mui/material";
 import data from "./../../../Data/data";
 
 const MyContacts = () => {
-  const cardPadding = { pt: 3.75, pl: 2, pr: 3.5, pb: 3.75 };
+  const cardPadding = { pt: 1, pl: 1, pr: 1, pb: 1 };
 
   return (
     <Fragment>
@@ -24,7 +24,7 @@ const MyContacts = () => {
               icon={data.contacts.phone.icon}
               label="Téléphone"
               data={
-                <Link href={"mailto:" + data.contacts.phone.data}>
+                <Link href={"tel:" + data.contacts.phone.data}>
                   {data.contacts.phone.data}
                 </Link>
               }
@@ -52,6 +52,40 @@ const MyContacts = () => {
               icon={data.contacts.adress.icon}
               label="Adresse"
               data={data.contacts.adress.data}
+            />
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} md={6} lg={6}>
+          <Card sx={cardPadding}>
+            <ShowContacts
+              icon={data.contacts.social[1].icon({
+                fontSize: 40,
+                color: "#0072b1",
+              })}
+              label="LinkedIn"
+              data={
+                <Link href={data.contacts.social[1].link} target="_blank">
+                  Voir le profil
+                </Link>
+              }
+            />
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} md={6} lg={6}>
+          <Card sx={cardPadding}>
+            <ShowContacts
+              icon={data.contacts.social[0].icon({
+                fontSize: 40,
+                color: "#4267B2",
+              })}
+              label="Facebook"
+              data={
+                <Link href={data.contacts.social[0].link} target="_blank">
+                  Voir le profil
+                </Link>
+              }
             />
           </Card>
         </Grid>
