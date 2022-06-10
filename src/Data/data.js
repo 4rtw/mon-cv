@@ -24,15 +24,15 @@ const data = {
     phone: {
       data: "0342698906",
       icon: <LocalPhoneIcon color="primary" sx={{ fontSize: 40 }} />,
-    }, //String 034XXXXXXX
+    },
     email: {
       data: "ando.l.andria@gmail.com",
       icon: <EmailIcon color="secondary" sx={{ fontSize: 40 }} />,
-    }, //String example@mail.com
+    },
     adress: {
       data: "LOT IAH 65 Bis A Avaratsena Itaosy",
       icon: <LocationOnIcon color="success" sx={{ fontSize: 40 }} />,
-    }, //String
+    },
     location: {
       data: { region: "Antananarivo", country: "Madagascar" },
       icon: <PublicIcon sx={{ fontSize: 40, color: pink[400] }} />,

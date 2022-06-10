@@ -1,7 +1,7 @@
 import { Typography, Grid, Card } from "@mui/material";
-import data from "./../../Data/data";
 import MyInformations from "../MiniComponents/MyProfile/MyInformations";
 import MyContacts from "../MiniComponents/MyProfile/MyContacts";
+import data from "./../../Data/data";
 
 const MyProfile = () => {
   return (
