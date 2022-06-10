@@ -15,6 +15,7 @@ const MyExperienceCard = ({ post }) => {
         flexDirection: "column",
         justifyContent: "flex-start",
         alignItems: "flex-start",
+        my: 2,
       }}
     >
       <CardHeader

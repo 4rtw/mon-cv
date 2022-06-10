@@ -1,98 +1,104 @@
-import { Fragment, useState, useEffect } from "react";
-import { Typography, Grid, IconButton, useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Fragment, useState } from "react";
+import { Typography, IconButton } from "@mui/material";
 import data from "./../../../Data/data";
 import MyExperienceCard from "./MyExperienceCard";
-import Carousel from "react-material-ui-carousel";
-
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper";
 
 const MyWorkExperience = () => {
-  const theme = useTheme();
-  const [carouselIndex, setCarouselIndex] = useState(0);
-  const [chunkSize, setChunckSize] = useState(3);
-  const matchXs = useMediaQuery(theme.breakpoints.up("xs"));
-  const matchMd = useMediaQuery(theme.breakpoints.up("md"));
-  const matchLg = useMediaQuery(theme.breakpoints.up("lg"));
+  const [swiper, setSwiper] = useState(null);
+  const [beginButton, setBeginButton] = useState(true);
+  const [endButton, setEndButton] = useState(false);
 
-  useEffect(() => {
-    if (matchXs) {
-      setChunckSize(1);
+  const onReachEdge = (edge) => {
+    if (edge === "begin") {
+      setBeginButton(true);
+    } else if (edge === "end") {
+      setEndButton(true);
     }
-    if (matchMd) {
-      setChunckSize(2);
-    }
-    if (matchLg) {
-      setChunckSize(3);
-    }
-  }, [matchXs, matchMd, matchLg]);
+  };
 
-  function* chunks(arr, n) {
-    for (let i = 0; i < arr.length; i += n) {
-      yield arr.slice(i, i + n);
+  const onSwiperChange = () => {
+    if (endButton) {
+      setEndButton(false);
     }
-  }
-
-  const children = [...chunks(data.experiences.professionnal, chunkSize)];
-
-  useEffect(() => {
-    if (carouselIndex < 0) {
-      setCarouselIndex(0);
+    if (beginButton) {
+      setBeginButton(false);
     }
-
-    if (carouselIndex > children.length - 1) {
-      setCarouselIndex(children.length - 1);
-    }
-  }, [carouselIndex, children.length]);
+  };
 
   return (
     <Fragment>
       <Typography variant="h5" color="text.secondary" gutterBottom>
-        Mon expérience professionnelle{" "}
+        Mon expérience professionnelle
         <IconButton
+          disabled={beginButton}
           variant="outlined"
           onClick={() => {
-            setCarouselIndex(carouselIndex - 1);
+            swiper.slidePrev();
           }}
         >
           <NavigateBeforeIcon />
         </IconButton>
         <IconButton
+          disabled={endButton}
           variant="outlined"
           onClick={() => {
-            setCarouselIndex(carouselIndex + 1);
+            swiper.slideNext();
           }}
         >
           <NavigateNextIcon />
         </IconButton>
       </Typography>
-      <Carousel
-        autoPlay={false}
-        index={carouselIndex}
-        animation="slide"
-        duration={400}
-        cycleNavigation={true}
-        navButtonsAlwaysInvisible={true}
-        fullHeightHover={true}
-        onChange={(now, previous) => {
-          setCarouselIndex(now);
+      <Swiper
+        pagination={{
+          type: "progressbar",
+        }}
+        modules={[Pagination, Autoplay]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          992: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
+        onSwiper={(swiper) => {
+          setSwiper(swiper);
+        }}
+        onReachBeginning={() => {
+          onReachEdge("begin");
+        }}
+        onReachEnd={() => {
+          onReachEdge("end");
+        }}
+        onSlideChange={() => {
+          onSwiperChange();
         }}
       >
-        {children.map((element, index) => {
+        {data.experiences.professionnal.map((element, index) => {
           return (
-            <Grid container key={index} spacing={3} alignItems="stretch">
-              {element.map((element2, index2) => {
-                return (
-                  <Grid item xs={12} md={6} lg={4} key={index2}>
-                    <MyExperienceCard post={element2} />
-                  </Grid>
-                );
-              })}
-            </Grid>
+            <SwiperSlide key={index}>
+              <MyExperienceCard key={index} post={element} />
+            </SwiperSlide>
           );
         })}
-      </Carousel>
+      </Swiper>
     </Fragment>
   );
 };

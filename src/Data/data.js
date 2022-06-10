@@ -68,11 +68,12 @@ const data = {
     professionnal: [
       {
         date: {
-          start: "1Mars 2016",
+          start: "Mars 2016",
           end: "Avril 2017",
         },
         content: {
           title: "Développeur Angular",
+          shortDescription: "",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
           link: "z",
@@ -87,11 +88,12 @@ const data = {
       },
       {
         date: {
-          start: "2Marsa 2014",
-          end: "Azvril 2015",
+          start: "Mars 2014",
+          end: "Avril 2015",
         },
         content: {
           title: "Développeur ReaazdzadazctJS",
+          shortDescription: "",
           description:
             "Lorem ipsumazd dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
           link: "z",
@@ -105,11 +107,12 @@ const data = {
       },
       {
         date: {
-          start: "3Mars 2azdzad014",
+          start: "Mars 2014",
           end: "Avril 2015",
         },
         content: {
           title: "Développeazdazdazdur ReactJS",
+          shortDescription: "",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
           link: "z",
@@ -123,11 +126,12 @@ const data = {
       },
       {
         date: {
-          start: "4Mars 2014",
+          start: "Mars 2014",
           end: "Avril 2015",
         },
         content: {
           title: "Développeur ReactJS",
+          shortDescription: "",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
           link: "z",
@@ -141,11 +145,12 @@ const data = {
       },
       {
         date: {
-          start: "5Mars 2014",
+          start: "Mars 2014",
           end: "Avril 2015",
         },
         content: {
           title: "Développeur ReactJS",
+          shortDescription: "",
           description:
             "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aquis viverra nibh cras.",
           link: "z",
@@ -159,11 +164,12 @@ const data = {
       },
       {
         date: {
-          start: "6Mars 2014",
+          start: "Mars 2014",
           end: "Avril 2015",
         },
         content: {
           title: "Développeur ReactJS",
+          shortDescription: "",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
           link: "z",
@@ -177,11 +183,12 @@ const data = {
       },
       {
         date: {
-          start: "7Mars 2014",
+          start: "Mars 2014",
           end: "Avril 2015",
         },
         content: {
           title: "Développeur ReactJS",
+          shortDescription: "",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
           link: "z",
@@ -195,11 +202,12 @@ const data = {
       },
       {
         date: {
-          start: "8Mars 2014",
+          start: "Mars 2014",
           end: "Avril 2015",
         },
         content: {
           title: "Développeur ReactJS",
+          shortDescription: "",
           description:
             "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aquis viverra nibh cras.",
           link: "z",
@@ -214,49 +222,115 @@ const data = {
     ],
     education: [
       {
-        date: {
-          start: "Fevrier 2020",
-          end: "Octobre 2021",
-        },
-        content: {
-          diploma: "Master",
-          description: "Mobiquité Big Data et intégration Système",
-        },
-        institution: {
-          name: "Université Côte d'Azur",
-          website: "",
-        },
-        imageLink: [],
+        niveau: "Master",
+        details: [
+          {
+            date: {
+              start: "Fevrier 2020",
+              end: "Octobre 2021",
+            },
+            content: {
+              diploma: "Master II",
+              description: "Mobiquité Big Data et intégration Système",
+            },
+            institution: {
+              name: "Université Côte d'Azur - Antenne Madagascar (IT University)",
+              website: "",
+              logo: "/mon-cv/images/logo/logo_uca.png",
+            },
+            imageLink: [],
+          },
+          {
+            date: {
+              start: "Fevrier 2019",
+              end: "Fevrier 2020",
+            },
+            content: {
+              diploma: "Master I",
+              description: "Mobiquité Big Data et intégration Système",
+            },
+            institution: {
+              name: "IT University",
+              website: "",
+              logo: "/mon-cv/images/logo/logo_itu.png",
+            },
+            imageLink: [],
+          },
+        ],
       },
       {
-        date: {
-          start: "Fevrier 2019",
-          end: "Fevrier 2020",
-        },
-        content: {
-          diploma: "Master I",
-          description: "-",
-        },
-        institution: {
-          name: "IT University",
-          website: "",
-        },
-        imageLink: [],
+        niveau: "Licence",
+        details: [
+          {
+            date: {
+              start: "Fevrier 2020",
+              end: "Fevrier 2019",
+            },
+            content: {
+              diploma: "Licence III",
+              description: "Mathématiques Appliqués et Informatique",
+            },
+            institution: {
+              name: "IS2M Madagascar",
+              website: "",
+              logo: "/mon-cv/images/logo/logo_is2m.png",
+            },
+            imageLink: [],
+          },
+          {
+            date: {
+              start: "Fevrier 2020",
+              end: "Fevrier 2019",
+            },
+            content: {
+              diploma: "Licence II",
+              description: "Mathématiques Appliqués et Informatique",
+            },
+            institution: {
+              name: "IS2M Madagascar",
+              website: "",
+              logo: "/mon-cv/images/logo/logo_is2m.png",
+            },
+            imageLink: [],
+          },
+          {
+            date: {
+              start: "Fevrier 2020",
+              end: "Fevrier 2019",
+            },
+            content: {
+              diploma: "Licence I",
+              description: "Mathématiques Appliqués et Informatique",
+            },
+            institution: {
+              name: "IS2M Madagascar",
+              website: "",
+              logo: "/mon-cv/images/logo/logo_is2m.png",
+            },
+            imageLink: [],
+          },
+        ],
       },
       {
-        date: {
-          start: "Fevrier 2020",
-          end: "Fevrier 2019",
-        },
-        content: {
-          diploma: "Licence",
-          description: "Mathématiques Appliqués et Informatique",
-        },
-        institution: {
-          name: "IS2M Madagascar",
-          website: "",
-        },
-        imageLink: [],
+        niveau: "Baccalauréat",
+        details: [
+          {
+            date: {
+              start: "Fevrier 2020",
+              end: "Fevrier 2019",
+            },
+            content: {
+              diploma: "Licence III",
+              description: "Mathématiques Appliqués et Informatique",
+            },
+            institution: {
+              name: "IS2M Madagascar",
+              website: "",
+              logo: "/mon-cv/images/logo/logo_is2m.png",
+            },
+            imageLink: [],
+          },
+        ],
       },
     ],
     training: [
