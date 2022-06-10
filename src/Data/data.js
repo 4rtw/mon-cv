@@ -336,15 +336,111 @@ const data = {
     training: [
       {
         date: {
-          start: "",
-          end: "",
+          start: "Mai 2022",
+          end: "Mai 2022",
         },
         content: {
-          title: "",
-          certificate: "",
+          title: "Initiation au développement mobile",
+          certificate: "Aucun",
+          description: "Desc",
+          trainer: {
+            name: "Orange Digital Center",
+            website: "",
+          },
+        },
+        imageLink: [],
+      },
+      {
+        date: {
+          start: "Mai 2022",
+          end: "Mai 2022",
+        },
+        content: {
+          title: "Initiation au développement mobile",
+          certificate: "Aucun",
+          description: "sss",
+          trainer: {
+            name: "Orange Digital Center",
+            website: "",
+          },
+        },
+        imageLink: [],
+      },
+      {
+        date: {
+          start: "Mai 2022",
+          end: "Mai 2022",
+        },
+        content: {
+          title: "Initiation au développement mobile",
+          certificate: "Aucun",
           description: "",
           trainer: {
-            name: "",
+            name: "Orange Digital Center",
+            website: "",
+          },
+        },
+        imageLink: [],
+      },
+      {
+        date: {
+          start: "Mai 2022",
+          end: "Mai 2022",
+        },
+        content: {
+          title: "Initiation au développement mobile",
+          certificate: "Aucun",
+          description: "",
+          trainer: {
+            name: "Orange Digital Center",
+            website: "",
+          },
+        },
+        imageLink: [],
+      },
+      {
+        date: {
+          start: "Mai 2022",
+          end: "Mai 2022",
+        },
+        content: {
+          title: "Initiation au développement mobile",
+          certificate: "Aucun",
+          description: "",
+          trainer: {
+            name: "Orange Digital Center",
+            website: "",
+          },
+        },
+        imageLink: [],
+      },
+      {
+        date: {
+          start: "Mai 2022",
+          end: "Mai 2022",
+        },
+        content: {
+          title: "Initiation au développement mobile",
+          certificate: "Aucun",
+          description: "",
+          trainer: {
+            name: "Orange Digital Center",
+            website: "",
+          },
+        },
+        imageLink: [],
+      },
+      {
+        date: {
+          start: "Mai 2022",
+          end: "Mai 2022",
+        },
+        content: {
+          title: "Initiation au développement mobile",
+          certificate: "Aucun",
+          description: "",
+          trainer: {
+            name: "Orange Digital Center",
             website: "",
           },
         },

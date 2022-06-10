@@ -11,7 +11,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const MyAcademicBackground = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(0);
 
   const myData = data.experiences.education;
 
