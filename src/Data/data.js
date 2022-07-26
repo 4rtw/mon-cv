@@ -12,7 +12,7 @@ const data = {
   lastname: "Ando Lalaina",
   gender: "Homme",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
+    "Fraichement diplômé, passionné par l'évolution de la technologie et toujours en quête de nouvelles connaissances. Mes mots d'ordre en tant que développeur: Maîtrise des outils, partage de connaissance et attitude.",
   nationality: "Malagasy",
   maritalStatus: "Célibataire",
   birth: {
@@ -68,14 +68,16 @@ const data = {
     professionnal: [
       {
         date: {
-          start: "Mars 2016",
-          end: "Avril 2017",
+          start: "Juillet 2021",
+          end: "Présent",
         },
         content: {
-          title: "Développeur Angular",
+          title: "Développeur Fullstack",
           shortDescription: "",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
+            [["Création d'application web pour l'administration estudiantine","MERN - MongoDB ExpressJS ReactJs NodeJs", "Améliorations pour la prochaine version de l'application en cours"],
+            ["Chef de projet/Développeur - Dématerialisation du système de pointage","Android native Java, Angular, SpringBoot, MongoDB"],
+            ["Chef de projet/Développeur - Réalisation d'un nouvel application de communication interne","Android native Java, Angular, SpringBoot, MySQL"]],
           link: "z",
         },
         company: {
@@ -83,7 +85,7 @@ const data = {
           logo: "/mon-cv/images/logo/logo_is2m.png",
           website: "",
         },
-        postType: "Emploi à temps partiel",
+        postType: "CDD",
         imageLink: [],
       },
       {
@@ -95,7 +97,7 @@ const data = {
           title: "Développeur ReaazdzadazctJS",
           shortDescription: "",
           description:
-            "Lorem ipsumazd dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
+            ["Lorem ipsumazd dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras."],
           link: "z",
         },
         company: {
@@ -114,7 +116,7 @@ const data = {
           title: "Développeazdazdazdur ReactJS",
           shortDescription: "",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
+            ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras."],
           link: "z",
         },
         company: {
@@ -133,7 +135,7 @@ const data = {
           title: "Développeur ReactJS",
           shortDescription: "",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
+            ["Lorem ipsum dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras."],
           link: "z",
         },
         company: {
@@ -152,7 +154,7 @@ const data = {
           title: "Développeur ReactJS",
           shortDescription: "",
           description:
-            "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aquis viverra nibh cras.",
+            ["consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aquis viverra nibh cras."],
           link: "z",
         },
         company: {
@@ -171,7 +173,7 @@ const data = {
           title: "Développeur ReactJS",
           shortDescription: "",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
+            ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras."],
           link: "z",
         },
         company: {
@@ -190,7 +192,7 @@ const data = {
           title: "Développeur ReactJS",
           shortDescription: "",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.",
+            ["Lorem ipsum dolor sit amet, consectetur adipiscin in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras."],
           link: "z",
         },
         company: {
@@ -209,7 +211,7 @@ const data = {
           title: "Développeur ReactJS",
           shortDescription: "",
           description:
-            "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aquis viverra nibh cras.",
+            ["consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aquis viverra nibh cras."],
           link: "z",
         },
         company: {

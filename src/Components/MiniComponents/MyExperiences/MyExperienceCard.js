@@ -4,9 +4,35 @@ import {
   Card,
   CardHeader,
   CardContent,
+  List,
+  ListItem,
+  ListItemText,
 } from "@mui/material";
+import { Fragment } from "react";
 
 const MyExperienceCard = ({ post }) => {
+  const makeDescription = description => {
+    return (
+      <List>
+        {description.map((element, index) => {
+          return (
+            <ListItem key={index}>
+              <ListItemText
+                primary={element[0]}
+                secondary={
+                  <Fragment>
+                    {element[1]}
+                    {element[2]}
+                  </Fragment>
+                }
+              />
+            </ListItem>
+          );
+        })}
+      </List>
+    );
+  };
+
   return (
     <Card
       sx={{
@@ -36,7 +62,9 @@ const MyExperienceCard = ({ post }) => {
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           {post.postType}
         </Typography>
-        <Typography variant="body2">{post.content.description}</Typography>
+        <Typography variant="body2">
+          {makeDescription(post.content.description)}
+        </Typography>
       </CardContent>
     </Card>
   );
