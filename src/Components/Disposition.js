@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useMediaQuery, Box, CssBaseline, Drawer } from "@mui/material";
-import { cookieService } from "./../Service/CookieService";
+import { cookieService } from "../Service/CookieService";
 import LeftDrawer from "./LeftDrawer";
 import RightDrawer from "./RightDrawer";
 
@@ -47,7 +47,7 @@ const Disposition = (props) => {
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
-  const bgColor = darkMode === "light" ? "#f0f0f0" : null;
+  const bgColor = darkMode !== "light" ? "#f0f0f0" : "#121212";
 
   return (
     <ThemeProvider theme={theme}>
